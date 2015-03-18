@@ -1,0 +1,22 @@
+1 先让它安装 客户端 Git-1.9.5-preview20141217
+然后在本地新建一个文件夹 右键进去 git bash
+ssh-keygen -t rsa #会在用户目录生成一个 id_rsa.pub，把它copy到我的E:\gitolite-admin\keydir里面并且重命名
+git clone git@192.168.1.12:qg#这是先把远程的空库copy过来,第一次用git clone ，以后就 git pull
+
+
+或者在本地新建文件夹，然后添加文件 
+git add .
+git commit -m "ddd"
+要关联一个远程库，使用命令git remote add origin git@192.168.1.12.git；
+
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+
+git config --global user.email "qg@chicv.com"
+git config --global user.name "qg"
+
+git add .
+git commit -m ""
+git push 
+
+
+第一次从服务器端下载用 git clone，以后再下载用 git pull 

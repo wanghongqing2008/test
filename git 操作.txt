@@ -1,0 +1,31 @@
+git clone git://github.com/sitaramc/gitolite
+   43  gitolite/install -ln ~/bin
+   44  mkdir bin
+   45  gitolite/install -ln ~/bin
+   46  ll bin/
+   47  gitolite -h
+   48  ll
+   49  gitolite setup -pk nay.pub 
+   50  ll /home/git/.ssh/
+   51  ll /home/git/
+   52  ll /home/git/ -a
+   53  exit
+   54  cd ~
+   55  gitolite setup -pk nay.pub 
+   56  ll bin/gitolite 
+   57  echo $PATH
+   58  exit
+   59  echo $PATH 
+   60  gitolite setup -pk nay.pub 
+   61  ll
+
+
+git clone git@192.168.1.12
+
+git config --global user.email "whq@chicv.com"
+git config --global user.name "whq"
+git status 
+git add  keydir/lq.pub
+git add keydir/cli.pub
+git commit -m "add cli liuqi"
+git push 
